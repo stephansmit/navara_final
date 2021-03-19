@@ -1,0 +1,9 @@
+select mean(temp), mean(uvi) from weatherdata where location='London' AND time > now() - 10m group by time(1m) fill(linear)
+#group by
+select mean(temp), mean(uvi) from weatherdata where location='London' AND time > now() - 10m group by time(1m) fill(previous)
+
+
+#get the last value
+SELECT * from weatherdata where location='London' and time > now()-1m ORDER BY time DESC Limit 1
+
+

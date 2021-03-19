@@ -1,0 +1,9 @@
+influxdb
+pykka
+dash
+dash-bootstrap-components
+pandas
+openpyxl
+plotly
+cufflinks
+pyorbital
